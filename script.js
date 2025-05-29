@@ -74,7 +74,7 @@ function updateExpanses() {
     for(const category in totalperCategory) {
       const li = document.createElement("li");
       li.textContent= `${category}: ${formatCurrency(
-        totalPerCategory[category]
+        totalperCategory[category]
       )}`;
       totalperCategoryList.appendChild(li);
     }
