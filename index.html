@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+ <h1>Financial Calculator</h1>
+
+  <!-- Expanse Calculator -->
+   <section id="expanses">
+    <h2>Expanse Calculator</h2>
+    <div class="input-group">
+     <label>Category</label>
+     <select id="category">
+        <option value="Makanan">Makanan</option>
+        <option value="Transportasi">Transportasi</option>
+        <option value="Hiburan">Hiburan</option>
+        <option value="Lainnya">Lainnya</option>
+     </select>
+     <input type="number" id="amount" placeholder="Enter amount"> 
+     <button onclick="addExpanse()">Add</button>
+    </div>
+    
+     <ul id="expanseList">
+    <!-- INi akan dihapus dan diganti dengan implementasi nyata -->
+   <!-- <li>
+    <span>Makanan Rp.18  000</span>
+    <button class="delete" onclick="deletExpanse()">x</button>
+   </li> -->
+    <!-- Akhir dari bagian kode yang akan dihapus -->
+    </ul>
+
+    <h3>Total Per Category</h3>
+    <ul id="totalPerCategory">
+        <!-- Ini akan dihapus dan diganti implementasi nyata -->
+         <!-- <li>Hiburan Rp. 35 000</li> -->
+    </ul>
+
+    <h3>Overall Total: <span id="overallTotal">Rp 0</span></h3>
+</section>
+ 
+<!-- Saving estimation -->
+ <section id="savings">
+    <h2>Savings</h2>
+    <Div class="input-group">
+    <input type="number" id="savingsAmount" placeholder="Enter Saving Amount">
+    <button onclick="addSavings ()">Add</button> 
+    </Div>
+
+    <ul id="savingsList">
+        <!-- Ini akan dihapus dan diganti dengan implementasi nyata -->
+        <!-- <Li>
+            <span>50.000</span>
+            <button class="delete">x</button>
+        </Li> -->
+        <!-- Akhir dari bagian kode yang akan dihapus -->
+    </ul>
+    <h3>Total Savings <span id="totalSavings">Rp 0</span></h3>
+    <h3>Remaining Savings After Expanse <span id="remainingSavings">Rp 0</span></h3>
+</section>
+
+<!-- Debr Repeyment Calculator -->
+ <section id="debt">
+    <h2>Debt Repayment Calculator</h2>
+    <div class="input-group">
+        <input type="number" id="totalDebt" placeholder="Total Debth">
+        <input type="number" id="mothlyPayment" placeholder="Monthly Payment">
+        <button onclick="calculateRepayment()">Calculate</button>
+    </div>
+
+    <h3>Estimated Repayment Time: <span id="repaymentMonth">0</span> Months</h3>
+ </section>
+ </div> 
+   
+  <script src="script.js"></script>
+</body>
+</html>  

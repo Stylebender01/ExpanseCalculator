@@ -1,0 +1,158 @@
+/*global*/
+body {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f9;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background: rgb(245,245,245);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+/* Heading */
+h1,h2 {
+color: #007bff;
+margin-bottom: 20px;
+}
+
+h1{
+    font-size:28px;
+}
+
+h2{
+    font-size: 22px;
+}
+
+h3{
+    font-size: 10px;
+    margin-top: 10px;
+    color: #555;
+}
+
+/* Expanse, savings, and date carad */
+#expanses,#savings,#debt {
+ background: white;
+ padding: 15px;
+ margin-bottom: 20px;
+ box-shadow: 0 2px 6 px rgba(0,0,0,0.1);
+ border-radius: 10px;
+ text-align: center;   
+}
+
+/* Input group */
+.input-group{
+    display: flex;
+    align-items: center;
+    gap :10px;
+    margin-bottom: 15px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0,2px,4px rgba(0,0,0,0.1);
+    outline: none;
+}
+
+.input-group input, .input-group select{
+    flex-grow: 1;
+    font-size: 14px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    outline: none;
+}
+
+button {
+ background-color: #28a745;
+ color: white;
+ border: none;
+ cursor: pointer;
+ font-weight: bold;
+ padding: 10px 15px;
+ border-radius: 5px;
+ transition: background 0.2s, transform 0.1s;  
+}    
+
+button:hover{
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+
+button.delete {
+    background-color: red;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 3px;
+}
+
+button.delete:hover {
+    background-color: darkred;
+}
+
+.input-group button {
+    flex-shrink: o;
+}
+
+/* list */
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+li {
+    background-color: #fff;
+    pad: 10px;
+    margin: 5px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border-left: 5px solid #007bff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+li span {
+    flex-grow: 1;
+    text-align: left;
+    font-weight: bold;
+    color: #444;
+}
+
+@media screen and(max-width: 600px){
+    .container{
+        padding: 10px;
+    }
+
+    h1,h2,h3 {
+        font-size: 80%;
+    }
+
+    .input-group {
+        flex-direction: colomn;
+        gap:5px;
+    }
+
+    .input-group input, .input-group select {
+        width: 90%;
+    }
+
+    button {
+        font-size: 14px;
+    }
+
+    ul {
+        font-size: 14px;
+    }
+
+    li {
+        padding: 8px;
+    }
+}
